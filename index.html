@@ -13,7 +13,7 @@
             margin: 0;
             font-family: Arial, sans-serif;
             background: url('tlo.jpg') no-repeat left center, 
-                        url('sniezki.jpg') no-repeat right center;
+                        url('spadajacy snieg.gif') no-repeat right center;
             background-size: 50% 100%;
         }
         .container {
@@ -25,6 +25,12 @@
             border-radius: 10px;
             text-align: center;
             overflow-y: auto;
+        }
+        h1 {
+            margin: 0 0 20px 0;
+            font-size: 36px;
+            color: #ff9800;
+            text-align: center;
         }
         .nav {
             display: flex;
@@ -51,12 +57,14 @@
         }
         .item {
             margin-bottom: 20px;
-            padding: 20px;
+            padding: 15px;
             background: rgba(255, 255, 255, 0.1);
             border-radius: 8px;
             display: flex;
             flex-direction: column;
             align-items: center;
+            width: 90%; /* Zmniejszono szerokość */
+            margin: 0 auto; /* Wyśrodkowano elementy */
         }
         .item img {
             max-width: 100%;
@@ -88,6 +96,9 @@
 </head>
 <body>
     <div class="container">
+        <!-- Nagłówek sklepu -->
+        <h1>Sklep z wszystkim</h1>
+
         <nav class="nav">
             <a href="#" onclick="showSection('popular')">Najpopularniejsze</a>
             <a href="#" onclick="showSection('cheap')">Najtańsze</a>
